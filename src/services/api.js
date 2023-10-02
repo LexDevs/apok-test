@@ -26,7 +26,7 @@ export const getChildNodesAPI = async (parentId) => {
 // Llamada a la API para eliminar un nodo
 export const deleteNodeAPI = async (nodeId) => {
     try {
-        const response = await axios.delete(`${API_BASE_URL}/nodes/${nodeId}`);
+        const response = await axios.delete(`${API_BASE_URL}/api/node/${nodeId}`);
         return response.data;
     } catch (error) {
         console.error('Error deleting node:', error);
@@ -37,7 +37,7 @@ export const deleteNodeAPI = async (nodeId) => {
 // Llamada a la API para crear un nodo
 export const createNodeAPI = async (parentNode) => {
     try {
-        const response = await axios.post(`${API_BASE_URL}/api/nodes`, parentNode);
+        const response = await axios.post(`${API_BASE_URL}/api/node`, {data:parentNode});
         return response.data;
     } catch (error) {
         console.error('Error creating node:', error);

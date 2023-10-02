@@ -8,3 +8,9 @@
     color: #3d5afe;
     text-decoration: double;
 }
+
+@media (max-width: 768px) {
+    .App h1 {
+        font-size: 2em; 
+    }
+}

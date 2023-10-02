@@ -44,3 +44,21 @@
     background-color: #e8eaf6;
     color: black;
 }
+
+/* Estilos para hacerlos responsivos */
+@media (max-width: 768px) {
+    .button-container {
+        flex-direction: column; /* Coloca los botones en una columna */
+        align-items: center; /* Centra los botones */
+    }
+
+    .button {
+        margin-right: 0;
+        margin-bottom: 10px; /* Espacio entre los botones */
+    }
+
+    /* Asegura que cada botón tenga un ancho del 45% para dejar espacio para dos botones en cada fila */
+    .button-en, .button-es, .button-create, .button-delete {
+        width: 45%;
+    }
+}

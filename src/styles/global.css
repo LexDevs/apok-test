@@ -22,3 +22,9 @@ body {
         background-position: 100% 50%;
     }
 }
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; /* Ajusta el tamaño de la fuente para pantallas pequeñas */
+    }
+}

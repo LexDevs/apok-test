@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import ChildNode from './ChildNodes';
-import { getNodeAPI } from '../services/API';  // Archivo para llamar a la API
+import { getNodeAPI } from '../services/Api'; 
 
 const ParentNodes = () => {
     const [parentNode, setParentNode] = useState([]);

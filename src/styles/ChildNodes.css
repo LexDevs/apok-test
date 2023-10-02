@@ -1,0 +1,46 @@
+.node-title {
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+/* Estilos para los botones */
+.button-container {
+    display: flow-root;
+    margin-bottom: 20px;
+    justify-content: space-around;
+}
+
+.button {
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-right: 10px;
+}
+
+.button-en {
+    background-color: #E4A11B;
+    color: white;
+}
+
+.button-es {
+    background-color: #14A44D;
+    color: white;
+}
+
+.button-create {
+    background-color: #007BFF;
+    color: white;
+}
+
+.button-delete {
+    background-color: #DC4C64;
+    color: white;
+}
+
+.button:hover {
+    background-color: #e8eaf6;
+    color: black;
+}

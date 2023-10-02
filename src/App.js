@@ -1,38 +1,14 @@
-// src/App.js
-import React, { useState, useEffect } from 'react';
-import NodeList from './components/NodeList';
-import api from './services/api';
+import React from 'react';
+import ParentNodes from './components/ParentNodes';
 import './styles/App.css'
 
-const App = () => {
-  const [nodes, setNodes] = useState([]);
-
-  useEffect(() => {
-    // Función para obtener los nodos iniciales
-    const fetchInitialNodes = async () => {
-      try {
-        const response = await api.get('/nodes');
-        setNodes(response.data);
-      } catch (error) {
-        console.error('Error fetching nodes:', error);
-      }
-    };
-
-    fetchInitialNodes();
-  }, []);
-
-  const handleNodeClick = async (nodeId) => {
-
-  };
-
+function App() {
   return (
-    <div className="container">
-      <div className="header">
-        <h1>Node Tree Navigation</h1>
-      </div>
-      <NodeList nodes={nodes} onNodeClick={handleNodeClick} />
+    <div className="App">
+      <h1>Tree Node Navigation App</h1>
+      <ParentNodes />
     </div>
   );
-};
+}
 
 export default App;

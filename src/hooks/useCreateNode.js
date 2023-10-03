@@ -4,24 +4,24 @@ import {
 } from "../services/api";
 
 const useCreateNode = () => {
-    const [isDeleteLoading, setIsDeleteLoading] = useState(false);
-    const [dataDelete, setDeleteData] = useState(null);
-    const [errorDelete, setDeleteError] = useState("");
+    const [isLoading, setIsLoading] = useState(false);
+    const [data, setData] = useState(null);
+    const [error, setError] = useState("");
 
     const handleCreateNode = (id) => {
-        setIsDeleteLoading(true)
+        setIsLoading(true)
         createNodeAPI({ parent: id })
             .then((data) => {
-                setDeleteData(data);
+                setData(data);
             })
-            .catch((error) => setDeleteError("Error creating node:", error.message)) 
+            .catch((error) => setError("Error creating node:", error.message)) 
             .finally(()=>{
-                setIsDeleteLoading(false)
+                setIsLoading(false)
             });
     };
 
     return {
-        isDeleteLoading, handleCreateNode, dataDelete, errorDelete
+        isLoading, handleCreateNode, data, error
     }
 }
 

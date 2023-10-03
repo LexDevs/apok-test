@@ -1,16 +1,46 @@
 .App {
-    text-align: center;
-    padding: 15px;
+  text-align: center;
+  padding: 15px;
 }
 
 .App h1 {
-    font-size: 3em;
-    color: #3d5afe;
-    text-decoration: double;
+  font-size: 3em;
+  color: #3d5afe;
+  text-decoration: double;
 }
 
-@media (max-width: 768px) {
-    .App h1 {
-        font-size: 2em; 
-    }
+label {
+  font-weight: bold;
+  margin-right: 10px;
+  font-size: 20px;
 }
+
+select {
+  padding: 5px; 
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 15px;
+  flex: 1; 
+}
+
+select option {
+  font-size: 15px;
+}
+
+select option:hover {
+  background-color: #f0f0f0;
+}
+
+select option:checked {
+  background-color: #e0e0e0;
+  font-weight: bold;
+}
+
+
+@media (max-width: 768px) {
+  .App h1 {
+    font-size: 2em;
+  }
+}
+
+

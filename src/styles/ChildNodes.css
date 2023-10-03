@@ -1,64 +1,68 @@
 .node-title {
-    margin-bottom: 15px;
-    font-size: 20px;
+  margin-bottom: 15px;
+  font-size: 20px;
 }
 
 /* Estilos para los botones */
 .button-container {
-    display: flow-root;
-    margin-bottom: 20px;
-    justify-content: space-around;
+  display: flow-root;
+  margin-bottom: 20px;
+  justify-content: space-around;
 }
 
 .button {
-    padding: 10px 20px;
-    cursor: pointer;
-    border: none;
-    border-radius: 5px;
-    font-size: 14px;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    margin-right: 10px;
-}
-
-.button-en {
-    background-color: #E4A11B;
-    color: white;
-}
-
-.button-es {
-    background-color: #14A44D;
-    color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin-right: 10px;
 }
 
 .button-create {
-    background-color: #007BFF;
-    color: white;
+  background-color: #007bff;
+  color: white;
 }
 
 .button-delete {
-    background-color: #DC4C64;
-    color: white;
+  background-color: #dc4c64;
+  color: white;
 }
 
 .button:hover {
-    background-color: #e8eaf6;
-    color: black;
+  background-color: #e8eaf6;
+  color: black;
+}
+
+a {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin-right: 10px;
+  color: black;
+}
+
+a:hover {
+  background-color: #e4a11b;
+  color: white;
 }
 
 /* Estilos para hacerlos responsivos */
 @media (max-width: 768px) {
-    .button-container {
-        flex-direction: column; /* Coloca los botones en una columna */
-        align-items: center; /* Centra los botones */
-    }
+  .button-container {
+    flex-direction: column; 
+    align-items: center; 
+  }
 
-    .button {
-        margin-right: 0;
-        margin-bottom: 10px; /* Espacio entre los botones */
-    }
-
-    /* Asegura que cada botón tenga un ancho del 45% para dejar espacio para dos botones en cada fila */
-    .button-en, .button-es, .button-create, .button-delete {
-        width: 45%;
-    }
+  .button {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .button-create,
+  .button-delete {
+    width: 45%;
+  }
 }
